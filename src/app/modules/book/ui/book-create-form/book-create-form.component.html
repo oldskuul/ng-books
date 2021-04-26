@@ -1,0 +1,15 @@
+<button (click)="showDialog()" class="buttons">ADD A NEW BOOK</button>
+
+<div id="modal_1" class="hidden">
+  <div class="mmodal">
+    <form class="mmodal-body" (ngSubmit)="onCreate()">
+      <label class="modal_head">New book details</label>
+      <input type="text" name="author" [(ngModel)]="author" placeholder="Author">
+      <input type="text" name="title" [(ngModel)]="title" placeholder="Title">
+      <input type="number" name="year" [(ngModel)]="year" placeholder="Year">
+      <input type="number" name="pages" [(ngModel)]="pages" placeholder="Number of pages">
+      <button [disabled]="!author && !title">Add</button>
+      <button (click)="closeDialog()" type="button">Close</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.list_item {
+  margin: 5px 5px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+ 
+.item {
+  display: flex;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.editBut {
+  padding: 10px;
+  width: 70px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  background-color: rgb(73, 175, 73);
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.delBut {
+  padding: 10px;
+  width: 70px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  background-color: rgb(224, 94, 94);
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}

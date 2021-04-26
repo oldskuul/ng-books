@@ -1,0 +1,7 @@
+<h2>YOUR BOOKS LIST</h2>
+
+<app-book-create-form (create)="onCreate($event)"></app-book-create-form>
+<app-book-list [bookList]="bookList$ | async"
+              (delete)="onDelete($event)"
+              (edit)="onEdit($event)"
+></app-book-list>

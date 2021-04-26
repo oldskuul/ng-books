@@ -1,0 +1,8 @@
+<div *ngFor="let book of bookList" class="list">
+  <app-book-list-item [book]="book" (delete)="onDelete(book.id)" (edit)="onEditMode(book.id)"></app-book-list-item>
+  <app-modal-edit *ngIf="editIds.includes(book.id)" [book]="book" (edit)="onEdit($event, book.id)"></app-modal-edit>
+</div>
+<hr>
+<span *ngIf="!bookList.length">You have an empty books list.
+  <br>Push the above button to add your first book.
+</span>

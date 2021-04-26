@@ -1,0 +1,13 @@
+<div id="modal_2" class="shown">
+  <div class="mmodal">
+    <form class="mmodal-body" (ngSubmit)="onEdit()">
+      <label class="modal_head">Change the book details</label>
+      <input type="text" name="author" [(ngModel)]="author" placeholder="Author">
+      <input type="text" name="title" [(ngModel)]="title" placeholder="Title">
+      <input type="number" name="year" [(ngModel)]="year" placeholder="Year">
+      <input type="number" name="pages" [(ngModel)]="pages" placeholder="Pages">
+      <button type="submit" [disabled]="!author && !title">OK</button>
+      <button (click)="onCancel()">Cancel</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+.shown {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.mmodal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.mmodal-body {
+  padding: 2rem;
+  width: 400px;
+  border-radius: 5px;
+  background: #fff;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  .modal_head {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+
+button {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+}
